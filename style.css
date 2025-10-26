@@ -1,0 +1,53 @@
+body {
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+header {
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    min-height: 4rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    background-color: #cacaca;
+}
+
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.7rem, 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.navbar li {
+    display: block;
+    align-items: center;
+    float: left;
+    list-style: none;
+    unicode-bidi:normal;
+}
+
+.container {
+    padding: 0.5rem;
+}
