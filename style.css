@@ -8,46 +8,62 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
     position: sticky;
     top: 0;
-    overflow: hidden;
 }
 
 .navbar {
-    min-height: 4rem;
-    position: relative;
+    min-height: 7vh;
     display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    
-    background-color: #cacaca;
+    background-color: var(--navbar-backgroud-color);
 }
 
 .navbar a {
     text-align: center;
+    align-items: center;
     text-decoration: none;
-    background-color: transparent;
+    background-color: var(--navbar-button-default-color);
+    display: block;
     padding: 0.7rem, 2rem;
+    height: 7vh;
+}
+
+.navbar a:hover, a:active {
+    background-color: var(--navbar-button-hover-color);
 }
 
 .navbar ul {
     display: flex;
     padding: 0px;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
+    margin: 0px;
 }
 
 .navbar li {
-    display: block;
-    align-items: center;
-    float: left;
     list-style: none;
-    unicode-bidi:normal;
 }
 
 .container {
     padding: 0.5rem;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+.container h3 {
+    margin-top: 0;
+}
+
+.main {
+    position: relative;
 }
