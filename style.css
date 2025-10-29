@@ -7,36 +7,18 @@ body {
     box-sizing: inherit;
 }
 
-header {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
-    position: sticky;
-    top: 0;
-}
+
 
 .navbar {
-    min-height: 7vh;
-    display: flex;
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
     background-color: var(--navbar-backgroud-color);
-}
-
-.navbar a {
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: var(--navbar-button-default-color);
-    display: block;
-    padding: 0.7rem, 2rem;
-    height: 7vh;
-}
-
-.navbar a:hover, a:active {
-    background-color: var(--navbar-button-hover-color);
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -50,7 +32,27 @@ header {
 
 .navbar li {
     list-style: none;
+    align-items: center;
+    height: 100%;
 }
+
+.navbar a {
+    padding: 0.7rem 0.5rem;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--navbar-button-default-color);
+
+    height: 100%;
+}
+
+.navbar a:hover, a:active {
+    background-color: var(--navbar-button-hover-color);
+}
+
+
+
 
 .container {
     padding: 0.5rem;
@@ -66,4 +68,5 @@ header {
 
 .main {
     position: relative;
+    width: 90%;
 }
