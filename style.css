@@ -1,11 +1,22 @@
-body {
-    font-size: 1.2rem;
-    margin: 0px;
-}
-
 *, ::before, ::after {
     box-sizing: inherit;
 }
+
+body {
+    font-family: 'Lexend';
+    font-size: 1.2rem;
+    margin: 0px;
+
+    /*hide scrollbar on other types of browser*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*hide scrollbar for webkit browsers*/
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 
@@ -36,8 +47,14 @@ body {
     height: 100%;
 }
 
+.navbar img {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
 .navbar a {
-    padding: 0.7rem 0.5rem;
+    padding: 0.5rem 1rem;
     float: left;
     display: block;
     text-align: center;
@@ -68,5 +85,7 @@ body {
 
 .main {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
 }
