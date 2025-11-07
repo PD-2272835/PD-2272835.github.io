@@ -19,7 +19,7 @@ body {
 
 
 
-
+/* navbar styling */
 .navbar {
     width: 100%;
     position: sticky;
@@ -69,8 +69,14 @@ body {
 }
 
 
+/*hero styling*/
+.hero {
+    width: 100%;
+    background-image: url(profile-bubble.jpg);
+}
 
 
+/*main content styling*/
 .container {
     padding: 0.5rem;
     border-color: black;
