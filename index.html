@@ -7,37 +7,36 @@
         <meta name="keywords" content="Portfolio, Gamedev, Graphics, SDL, Low-level, programming, Peter">
         <meta name="author" content="Pete D">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
-        
+        <title>Pete, Engine Programmer</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'> 
         <link rel="stylesheet" href="style.css">
-        
         <style>
             /*cacaca - funky grey
             181818 - blackish
             ededed - cream background
             */
-
             :root {
                 --main-backgroud-color: #181818;
 
-                --content-backgroud-color: #181818;
-                --content-text-color: #fff;
-
                 --navbar-backgroud-color: #30548a;
                 --navbar-text-color: #fff;
-                --navbar-button-default-color: #30548a;
+                --navbar-button-default-color: var(--navbar-backgroud-color);
                 --navbar-button-hover-color: #294774;
+
+                --content-backgroud-color: #181818;
+                --content-text-color: #fff;
+                --alt-text-color: #cdcdcd;
+                --alt-text-color-transparent: #cdcdcd7c;
             }
         </style>
-        <title>Hullo! o//</title>
     </head>
     <body>
         <nav class="navbar">
             <ul>
                 <li><a href="#about"><img src="img/profile-bubble.jpg"></a></li>
-                <li><a href="#work"><h2>Projects</h2></a></li>
-                <li><a href="#other"><h2>Contact</h2></a></li>
+                <li><a href="#projects"><h2>Projects</h2></a></li>
+                <li><a href="#contact"><h2>Contact</h2></a></li>
                 <li><a href="https://github.com/PD-2272835" target="_blank"><img src="img/github-mark-white.svg"></a></li>
             </ul>
         </nav>
@@ -55,35 +54,57 @@
 
         <main class="main">
 
-            <section id="about">
+            <section id="projects">
                 <div class="container">
-                    <h3>About Me!</h3>
-                    <img src="profile-bubble.jpg" alt="What I look Like">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h1>My Projects</h1>
+    
+                    <div class="project-box" id="sgf">
+                        <h4>Shrimp Games Framework</h4>
+                        <a href="https://github.com/PD-2272835/SDL3Physics" target="_blank"><img></a>
+                        <div class="description">
+
+                        </div>
+                    </div>
+
+                    <div class="project-box" id="sgm">
+                        <h4>Shrimp Games Math</h4>
+                        <a href="github.com/PD-2272835/MathsLib" target="_blank"><img></a>
+                        <div class="description">
+
+                        </div>
+                    </div>
+
+                    <div class="project-box" id="prapi">
+                        <h4>PRAPI</h4>
+                        <a href="https://github.com/PD-2272835/LearnOpenGL" target="_blank"><img></a>
+                        <div class="description">
+
+                        </div>
+                    </div>
+
+                    <div class="project-box" id="uopgj2025">
+                        <h4>Let Them Eat Cake!</h4>
+                        <a href="https://github.com/PD-2272835/LetThemEatCake" target="_blank"><img></a>
+                        <div class="description">
+
+                        </div>
+                    </div>
+
+
                 </div>
             </section>
 
-            <section id="game-jams">
-                <div class="container">
-                    <h3>Game Jams</h3>
-                </div>
-            </section>
-
-            <section id="school">
-                <div class="container">
-                    <h3>Uni + College projects</h3>
-                </div>
-            </section>
-
-            <section id="other">
-                <div class="container">
-                    <h3>Other Tinkerings...</h3>
-                </div>
-            </section>
         </main>
 
         <footer>
-            
+            <section id="contact">
+                <ul>
+                    <li><a href="mailto:peted1877+portfolio@gmail.com" target="_blank">Email</a></li>
+                    <li>Discord: @crabman08</li>
+                    <li><a href="https://github.com/PD-2272835" target="_blank">Github</a></li>
+                </ul>
+            </section>
+            <p>Copyright &copy; Pete D 2026</p>
         </footer>
     </body>
 </html>

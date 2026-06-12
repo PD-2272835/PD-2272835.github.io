@@ -120,16 +120,22 @@ body {
 .hero-text h2 {
     margin-top: 0.26em;
     font-size: 1.5em;
-    color: #cdcdcd7c;
+    color: var(--alt-text-color-transparent);
 }
 
 .hero-text p {
-    color: #cdcdcd;
+    color: var(--alt-text-color);
 }
 
-
-
 /*end of hero styling*/
+
+
+/*start of projects styling*/
+
+#projects {
+    text-align: center;
+}
+
 
 /*main content styling*/
 .container {
@@ -150,4 +156,32 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+/*footer styling*/
+
+footer {
+    text-align: center;
+    color: var(--alt-text-color-transparent);
+}
+
+#contact {
+    justify-content: center;
+    display: flex;
+    color: var(--alt-text-color);
+}
+
+footer ul {
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0px;
+}
+
+footer li {
+    list-style: none;
+    align-items: center;
+    height: 100%;
 }
