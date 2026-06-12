@@ -2,70 +2,110 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+        <meta charset="UTF-8">
+        <meta name="Description" content="A portfolio Site">
+        <meta name="keywords" content="Portfolio, Gamedev, Graphics, SDL, Low-level, programming, Peter">
+        <meta name="author" content="Pete D">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pete, Engine Programmer</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'> 
         <link rel="stylesheet" href="style.css">
         <style>
+            /*cacaca - funky grey
+            181818 - blackish
+            ededed - cream background
+            */
             :root {
-                --main-backgroud-color: #ededed;
-                --content-backgroud-color: #fff;
-                --content-text-color: #181818;
-                --navbar-backgroud-color: #cacaca;
-                --navbar-text-color: #181818;
-                --navbar-button-default-color: #cacaca;
-                --navbar-button-hover-color: #fff;
+                --main-backgroud-color: #181818;
+
+                --navbar-backgroud-color: #30548a;
+                --navbar-text-color: #fff;
+                --navbar-button-default-color: var(--navbar-backgroud-color);
+                --navbar-button-hover-color: #294774;
+
+                --content-backgroud-color: #181818;
+                --content-text-color: #fff;
+                --alt-text-color: #cdcdcd;
+                --alt-text-color-transparent: #cdcdcd7c;
             }
         </style>
-        <title>Hullo! o//</title>
     </head>
     <body>
         <nav class="navbar">
             <ul>
-                <li><a href="#about"><img src="profile-bubble.jpg"></a></li>
-                <li><a href="#game-jams"><h2>Game Jams</h2></a></li>
-                <li><a href="#school"><h2>Classwork</h2></a></li>
-                <li><a href="#other"><h2>Other Bits</h2></a></li>
-                <li><a href="https://github.com/PD-2272835" target="_blank"><img src="github-mark-white.svg"></a></li>
+                <li><a href="#about"><img src="img/profile-bubble.jpg"></a></li>
+                <li><a href="#projects"><h2>Projects</h2></a></li>
+                <li><a href="#contact"><h2>Contact</h2></a></li>
+                <li><a href="https://github.com/PD-2272835" target="_blank"><img src="img/github-mark-white.svg"></a></li>
             </ul>
         </nav>
 
         <section class="hero">
-            <div class="hero-text">
-                <h1>Hullo there</h1>
+            <div class="hero-background">
+                <div class="hero-text">
+                    <h1>Hullo, I'm <span id="name">Pete</span></h1>
+                    <h2>Low-Level Game Developer and Graphics Programmer</h2>
+                    <p>I'm a Second Year Undergrad at the University of Portsmouth, looking to break into the games industry as an Engine or Game programmer</p>
+                    <p>Check out some of my work below!</p>
+                </div>
             </div>
         </section>
 
         <main class="main">
 
-            <section id="about">
+            <section id="projects">
                 <div class="container">
-                    <h3>About Me!</h3>
-                    <img src="profile-bubble.jpg" alt="What I look Like">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h1>My Projects</h1>
+                    <div id="project-container">
+    
+                        <div class="project-box" id="sgf">
+                            <h4>Shrimp Games Framework</h4>
+                            <a href="https://github.com/PD-2272835/SDL3Physics" target="_blank"><img></a>
+                            <div class="description">
+                                <p>My custom rendering and physics framework that I built for MEGA and PROGC, SGF uses SDL3 as a portability layer to run on both PC and PS5! All mathematics are powered by Shrimp Games Math</p>
+                            </div>
+                        </div>
+
+                        <div class="project-box" id="sgm">
+                            <h4>Shrimp Games Math</h4>
+                            <a href="github.com/PD-2272835/MathsLib" target="_blank"><img></a>
+                            <div class="description">
+                                <p>My custom C++17 Maths library built for MEGA. Used extensively for rendering, entity management and collision detection in SGF. Works with both GNU and LLVM-based compilers for the C++17 standard</p>
+                            </div>
+                        </div>
+
+                        <div class="project-box" id="prapi">
+                            <h4>PRAPI</h4>
+                            <a href="https://github.com/PD-2272835/LearnOpenGL" target="_blank"><img></a>
+                            <div class="description">
+                                <p>My first steps into graphics programming! An OpenGL rendering framework, used to create an orbit sim. Uses GLM for mathematics and features a scene graph for dirty-flag optimisation</p>
+                            </div>
+                        </div>
+
+                        <div class="project-box" id="uopgj2025">
+                            <h4>Let Them Eat Cake!</h4>
+                            <a href="https://github.com/PD-2272835/LetThemEatCake" target="_blank"><img></a>
+                            <div class="description">
+                                <p>A little game that myself and a group of friends made for the University of Portsmouth Game Jam 2025! Throw cake-based projectiles at the revolting peasants from your high castle. I built the cake selection, menu UI and damage system</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
-            <section id="game-jams">
-                <div class="container">
-                    <h3>Game Jams</h3>
-                </div>
-            </section>
-
-            <section id="school">
-                <div class="container">
-                    <h3>Uni + College projects</h3>
-                </div>
-            </section>
-
-            <section id="other">
-                <div class="container">
-                    <h3>Other Tinkerings...</h3>
-                </div>
-            </section>
         </main>
 
         <footer>
-            
+            <section id="contact">
+                <ul>
+                    <li><a href="mailto:peted1877+portfolio@gmail.com" target="_blank">Email</a></li>
+                    <li><a href="https://github.com/PD-2272835" target="_blank">Github</a></li>
+                </ul>
+            </section>
+            <p>Copyright &copy; Pete D 2026</p>
+            <p>(shrimps is bugs)</p>
         </footer>
     </body>
 </html>
