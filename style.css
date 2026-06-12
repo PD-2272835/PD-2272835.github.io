@@ -28,7 +28,7 @@ body {
     z-index: 1;
     top: 0;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     background-color: var(--navbar-backgroud-color);
     display: flex;
     justify-content: center;
@@ -78,14 +78,39 @@ body {
 .navbar a:hover, a:active {
     background-color: var(--navbar-button-hover-color);
 }
+/*end of navbar styling*/
+
 
 
 /*hero styling*/
-.hero {
+.hero-background {
+    /*ty w3schools*/
     width: 100%;
-    background-image: url(img/profile-bubble.jpg);
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/profile-bubble.jpg);
+    margin-bottom: 5vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
 }
 
+.hero-text {
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text #name {
+    color: var(--navbar-backgroud-color);
+}
+
+/*end of hero styling*/
 
 /*main content styling*/
 .container {
