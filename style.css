@@ -7,6 +7,7 @@ body {
     font-size: 1.2rem;
     margin: 0px;
     /*hide scrollbar on other types of browser*/
+    overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
@@ -103,12 +104,30 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
 }
 
-.hero-text #name {
-    color: var(--navbar-backgroud-color);
+.hero-text h1{
+    font-size: 6.5em;
+    margin-bottom: 0;
+    /*change the color of name for emphasis*/
+    #name {
+        color: orange;
+    }
 }
+
+/*subheading*/
+.hero-text h2 {
+    margin-top: 0.26em;
+    font-size: 1.5em;
+    color: #cdcdcd7c;
+}
+
+.hero-text p {
+    color: #cdcdcd;
+}
+
+
 
 /*end of hero styling*/
 
